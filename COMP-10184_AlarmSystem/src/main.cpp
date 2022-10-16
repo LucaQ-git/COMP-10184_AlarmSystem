@@ -88,7 +88,6 @@ void checkAlarmState() {
             break;
 
           case ALARM_COUNTDOWN:// Alarm is at countdown stage
-            // 
             if(millis() > iControlTimer) {
               Serial.println("Motion Detected! - Alarm will sound in 10s!");
               iControlTimer = iControlTimer + ALARM_DELAY;//10 seconds to press button
